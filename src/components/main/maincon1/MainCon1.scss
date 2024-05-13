@@ -1,0 +1,131 @@
+.main {
+    .con-box {
+        width: 100%;
+        .inner {
+            padding: 120px 0;
+        }
+        h2 {
+            font-size: 45px;
+            font-weight: 500;
+        }
+        .more {
+            a {
+                display: inline-block;
+                width: 180px;
+                height: 50px;
+                border: 1px solid #000;
+                text-align: center;
+                line-height: 50px;
+                font-size: 15px;
+                border-radius: 25px;
+                position: relative;
+                overflow: hidden;
+                span {
+                    transition: 0.4s;
+                    z-index: 5;
+                    position: relative;
+                }
+                i {
+                    vertical-align: middle;
+                    margin-left: 5px;
+                }
+                &::after {
+                    content: '';
+                    display: block;
+                    width: 250px;
+                    height: 70px;
+                    background: orange;
+                    transition: 0.4s;
+                    transform: skewX(15deg);
+                    position: absolute;
+                    left: -260px;
+                    top: -10px;
+                }
+            }
+            &:hover {
+                a {
+                    &::after {
+                        left: -10px;
+                    }
+                }
+            }
+        }
+    }
+    .box1 {
+        h2 {
+            margin-bottom: 15px;
+            text-align: center;
+            & + p {
+                font-size: 17px;
+                margin-bottom: 35px;
+                text-align: center;
+            }
+        }
+        .more {
+            text-align: center;
+            a {
+                &:hover {
+                    border-color: orange;
+                    span {
+                        color: #fff;
+                    }
+                    &::after {
+                        background: orange;
+                    }
+                }
+            }
+        }
+        ul {
+            li {
+                width: 270px;
+                height: 510px;
+                a {
+                    &:hover {
+                        img {
+                            transform: scale(1.2);
+                        }
+                        span {
+                            opacity: 0.5;
+                        }
+                    }
+                    div {
+                        width: 100%;
+                        height: 370px;
+                        overflow: hidden;
+                        position: relative;
+                        img {
+                            width: 100%;
+                            transition: 0.5s;
+                        }
+                    }
+                    h3 {
+                        font-size: 22px;
+                        line-height: 1.3;
+                        margin: 15px 0;
+                        padding-bottom: 10px;
+                        border-bottom: 1px solid #000;
+                        span {
+                            display: block;
+                        }
+                    }
+                    p {
+                        font-size: 35px;
+                        line-height: 1.4;
+                        word-break: keep-all;
+                    }
+                }
+            }
+        }
+    }
+
+    .con1 {
+        ul {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .more {
+            margin-top: 70px;
+        }
+    }
+}
