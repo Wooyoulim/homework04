@@ -1,10 +1,10 @@
-import Index from './components/Index';
+import Work4 from './component/Work4';
 
 const App = () => {
     return (
-        <>
-            <Index />
-        </>
+        <div className="wrap">
+            <Work4 />
+        </div>
     );
 };
 
